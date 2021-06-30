@@ -87,8 +87,8 @@ void setup() {
 }
 
 void loop() {
-  for (char index = 0; index < n; index++) {testData[index] = analogRead(A0);}
-  for (char index = 0; index < n; index++) {
+  for (byte index = 0; index < n; index++) {testData[index] = analogRead(A0);}
+  for (byte index = 0; index < n; index++) {
     float Q0;
     Q0 = coeff * Q1 - Q2 + (float) testData[index];
     Q2 = Q1;
